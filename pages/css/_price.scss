@@ -1,0 +1,332 @@
+.priceTopMenu{
+  padding: 25px 0;
+  background-color: $light-base;
+  box-shadow: 0 0 9px rgba(0,0,0,0.2);
+  position: relative;
+  z-index: 5;
+  .menuBody{
+    display: inline-block;
+    float: right;
+    li{
+      padding: 3px 0;
+      display: inline-block;
+      min-width: 90px;
+      text-align: center;
+      margin-right: 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all .3s;
+      a{
+        color: $gray-dark;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+      }
+      &:hover,&.active{
+        background-color: rgba(0,0,0,0.2);
+      }
+    }
+    #menu-contact{
+      background-color: $orange-red;
+      color: $light-base;
+      padding:3px 10px;
+      >a{
+        color: $light-base;
+      }
+      &:hover{
+        background-color: rgba($orange-red,0.8);
+      }
+    }
+  }
+
+}
+
+.priceMiddleTitle{
+  background-color: $blue-base;
+  color: $light-base;
+  text-align: center;
+  padding:55px 0;
+  @media (max-width: 640px) {
+    margin-top: 68px;
+    padding:20px 0;
+  }
+  &.Enterprise{
+    background-color: $gray-lighter;
+    .title{
+      color: $enterprise-gray;
+      &:before{
+        background-color: $enterprise-gray;
+      }
+    }
+    .subtitle{
+      color: $enterprise-gray;
+    }
+  }
+  .title{
+    font-size: $fontsize-large;
+    font-family: "OpenSans-ExtraBold";
+    position: relative;
+    margin-bottom: 40px;
+    letter-spacing: 10px;
+    &:before{
+      content: '';
+      width: 100px;
+      height: 10px;
+      position: absolute;
+      bottom:-20px;
+      left:50%;
+      background-color: $light-base;
+      margin-left: -50px;
+    }
+    @media (max-width: 640px) {
+      font-size: 30px;
+    }
+  }
+  .subtitle{
+    font-family: "Hiragino Kaku Gothic Pro W6";
+    font-size: $fontsize-footer-head;
+    @media (max-width: 640px) {
+      font-size: 18px;
+    }
+  }
+}
+
+.price-gray-body{
+  background-color: $gray-lighter;
+}
+
+.priceGreenCard{
+  margin: 40px 0;
+  background-color: $green-base;
+  border-radius: 15px;
+  color: $light-base;
+  display: table;
+  min-height: 220px;
+  width: 100%;
+  @media (max-width: 640px) {
+    border-radius: 0;
+    margin-top: 0;
+  }
+  .mainTitle{
+    color: $orange-base;
+    text-shadow:2px 2px 0px #1b816b ;
+    font-size: $fontsize-orange-title;
+    font-family: "Hiragino Kaku Gothic Pro W6";
+    @media(max-width: 640px){
+      font-size: 30px;
+    }
+  }
+  .half-box{
+    padding:20px 0;
+    display: table-cell;
+    vertical-align: middle;
+    box-sizing: border-box;
+    width: 50%;
+    @media (max-width: 930px) {
+      width: 100%;
+      display: block;
+      text-align: center;
+    }
+    &.left{
+      text-align: center;
+      img {width: 370px;
+        @media(max-width: 640px){
+          width: 300px;
+        }
+      }
+    }
+  }
+  .newTip{
+    background-color: $orange-red;
+    padding:2px 10px;
+    border-radius: 30px;
+    &.pc{
+      @media (max-width: 930px) {
+        display: none;
+      }
+    }
+    &.mobile{
+      margin-right:15px;
+      @media(min-width:930px ){
+        display: none;
+      }
+    }
+  }
+  .subtitle-wrapper{
+    margin: 15px 0;
+    @media(max-width:930px ){
+      display: inline-block;
+    }
+  }
+  .subtitle{
+    font-size: 18px;
+  }
+  .content-text{
+    margin-right: 52px;
+    @media (max-width: 930px) {
+      margin-right: 0;
+      padding: 0 30px;
+    }
+  }
+  .detail-btn{
+    border-radius: $btn-radius-base;
+    border:2px solid $light-base;
+    padding:10px 15px;
+    transition: all .3s;
+    color: $light-base;
+    margin-top: 10px;
+    display: inline-block;
+    &:hover{
+      color: $green-base;
+      background-color: $light-base;
+    }
+  }
+}
+
+.priceCenterArtical{
+  text-align: center;
+  font-size: $fontsize-small;
+  margin: 20px 0;
+}
+
+.priceDepart{
+  width: 100%;
+  display: table;
+  padding: 40px 0;
+  @media(max-width: 1024px){
+    display: block;
+  }
+  .table-gap{
+    width: 2%;
+    display: table-cell;
+    @media(max-width: 1024px){
+      display: none;
+    }
+  }
+  .smallTip{
+    font-size: $fontsize-small;
+    color: $text-gray;
+    text-align: right;
+    position: relative;
+    right: -25px;
+    font-weight: bold;
+    margin-top: -5px;
+  }
+  .coming-soon-img{
+    margin-top: 15px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+  }
+  .priceCardBox{
+    position: relative;
+    border-radius:15px;
+    padding:30px 50px;
+    width: 32%;
+    display: table-cell;
+    background-color: $light-base;
+    box-sizing: border-box;
+    @media(max-width: 1024px){
+      display: block;
+      width: 320px;
+      margin: 0 auto 30px;
+      padding:30px;
+    }
+    &:last-child{
+      margin-right: 0;
+      @media(max-width: 1024px){
+        margin: 0 auto;
+      }
+    }
+    .headArea{
+      height: 290px;
+      border-bottom:1px solid $gray-lighter;
+      .price-box-shadow-orange{
+        @include price-box-shadow($orange-base,$fontsize-title-base)
+      }
+      .price-box-shadow-red{
+        @include price-box-shadow($orange-red,$fontsize-title-base)
+      }
+      .price-box-shadow-blue{
+        @include price-box-shadow($blue-base,$fontsize-title-base)
+      }
+      .payInfo{
+        color: $text-gray;
+        //margin-top: 10px;
+        margin-bottom: -10px;
+      }
+      .price-large-num-red{
+        @include price-box-shadow($orange-red,$fontsize-large-num);
+        line-height: 1;
+      }
+      .price-large-num-orange{
+        @include price-box-shadow($orange-base,$fontsize-large-num);
+        line-height: 1;
+      }
+      .icon-rmb-red{
+        @include price-box-shadow($orange-red,30px);
+        float: left;
+        margin-top: 9px;
+      }
+      .icon-rmb-orange{
+        @include price-box-shadow($orange-base,30px);
+        float: left;
+        margin-top: 9px;
+      }
+    }
+
+    .bodyArea{
+      padding:15px 0;
+      font-size: 18px;
+      .priceInfoList{
+        li{
+          margin-bottom:13px;
+          @media(max-width: 640px){
+            margin-bottom: 5px;
+            font-size: 14px;
+          }
+        }
+        .left{
+          display: inline-block;
+          width: 10%;
+          width: 30px;
+          margin-right: 10px;
+          float: left;
+          text-align: right;
+          img{
+            vertical-align: 0;
+          };
+        }
+        .right{
+          display: inline-block;
+          width: 86%;
+          width: calc(100% - 40px);
+          float: left;
+          &.strong{
+            font-weight:bold;
+          }
+        }
+      }
+      .icon-pro{
+        font-size: 9px;
+        border:1px dashed $orange-red;
+        color: $orange-red;
+        padding:0 2px;
+        display: inline-block;
+      }
+    }
+    .orange-btn{
+      @include price-big-btn($orange-base,#e0a360,$light-base)
+    }
+    .red-btn{
+      @include price-big-btn($orange-red,#cc5b49,$light-base);
+      margin-top: 13px;
+    }
+    .blue-btn{
+      @include price-big-btn(#4479b1,#4479b1,$blue-base);
+      margin-top: 140px;
+    }
+  }
+}
+
+

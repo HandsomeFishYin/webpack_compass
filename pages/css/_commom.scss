@@ -1,0 +1,111 @@
+.body-container{
+  width: 1300px;
+  margin: 0 auto;
+  position: relative;
+  @media(max-width: 1300px){
+    width: 100%;
+    padding:0 20px;
+  }
+}
+
+.pull-left{
+  float: left;
+}
+.pull-right{
+  float: right;
+}
+
+.text-left{
+  text-align: left;
+}
+.text-center{
+  text-align: center;
+}
+.text-right{
+  text-align: right;
+}
+
+.carouselTable{
+  height: calc(100vw / 1920 *718);
+  display: table;
+  width: 100%;
+  text-align: center;
+  left: 0;
+  @media(max-width: 640px){
+    height: calc(100vw / 640 *875);
+  }
+}
+.globalTableCell{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+.inlineBlock{
+  display: inline-block;
+}
+
+.pc-show{
+  @media(max-width: 640px){
+    display: none !important;
+  }
+}
+.mobile-show{
+  @media(min-width: 640px){
+    display: none !important;
+  }
+}
+
+.text-green{
+  color: #4fd813;
+}
+.text-blue{
+  color: $blue-base !important;
+}
+
+//回到顶部
+.btn-toTop {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 99;
+  width: 45px;
+  cursor:pointer;
+  @media(min-width: 640px){
+    width: 60px;
+  }
+}
+
+body.scroll-menu{
+  .priceTopMenu{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+  }
+  .priceMiddleTitle,#carousel-example-generic{
+    margin-top: 103px;
+  }
+}
+body.scroll-tour{
+  .tour-menu-wrapper{
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 20;
+  }
+}
+
+body.price{
+  .priceTopMenu{
+    position: relative;
+  }
+  .priceMiddleTitle,#carousel-example-generic{
+    margin-top: 0;
+  }
+  &.scroll-tour{
+    .tour-section.first{
+      margin-top: 78px;
+    }
+  }
+}

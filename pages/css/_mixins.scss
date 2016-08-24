@@ -1,0 +1,43 @@
+
+
+//下方有短横线的大块标题 color表示下方短横线的颜色
+@mixin underline($color){
+  position: absolute;
+  width: 100px;
+  height:10px;
+  background-color: $color;
+  bottom: -40px;
+  left: 50%;
+  margin-left: -50px;
+  @media (max-width: 640px) {
+    bottom:-20px;
+  }
+}
+
+.underline-blue{
+  @include underline($blue-base)
+}
+
+
+@mixin price-box-shadow($color,$fontsize){
+  font-size: $fontsize;
+  color: $color;
+  text-shadow: 2px 2px 0px #dfd2c5;
+  font-family: "Roboto-Black";
+}
+
+
+@mixin price-big-btn($bg-color,$shadow-color,$text-color){
+    display: inline-block;
+    color: $text-color;
+    font-size: $fontsize-middle;
+    width: 100%;
+    text-align: center;
+    line-height: 65px;
+    background-color: $bg-color;
+    border-radius: $btn-radius-large;
+    margin-top: 30px;
+    box-shadow: 0 4px 0 $shadow-color;
+}
+
+

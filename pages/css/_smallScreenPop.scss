@@ -1,0 +1,128 @@
+//小屏的菜单栏
+.smallScreenNav{
+  min-height: 100%;
+  position: fixed;
+  top:0;
+  background-color: $light-base;
+  width: 100%;
+  z-index: 1040;
+  transform: translate3d(0,0,0);
+  display: block;
+  overflow-y: scroll;
+  height: 100%;
+
+  .header{
+    padding:15px 25px;
+    height: 75px;
+  }
+  .icon-form_close{
+    float: right;
+    font-size: 24px;
+    color: $blue-base;
+    cursor: pointer;
+  }
+  .smallScreenMenuList{
+    padding:0 25px;
+    li{
+      border-bottom: 1px solid #eeeeee;
+      &:last-child>a:before{
+        width: 0 !important;
+      }
+    }
+    li>a{
+      line-height: 60px;
+      color: $blue-base;
+      font-weight: bold;
+      font-size: $fontsize-footer-head;
+      display: inline-block;
+      width: 100%;
+      text-indent: 35px;
+      position: relative;
+      &:before{
+        content: "";
+        width: 15px;
+        height: 20px;
+        background-color: #cccccc;
+        position: absolute;
+        top: 20px;
+        left: 0;
+      }
+    }
+  }
+  .smallScreenContact{
+    border-bottom: none;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: $blue-base;
+    font-size:18px ;
+    border-radius: $border-radius-base;
+    margin-top: 25px;
+    a{
+      color: $light-base !important;
+    }
+  }
+
+  &.download{
+    background-color: $green-base;
+  }
+  &.contact{
+    background-color: $blue-base;
+  }
+
+  &.download, &.contact{
+    color: $light-base;
+    .icon-form_close{
+      color: $light-base;
+    }
+    .icon-form_open{
+      font-size: $fontsize-title-base;
+    }
+  }
+  .body{
+    padding:0 25px;
+  }
+  .downloadTitle{
+    font-size: $fontsize-large;
+    font-family: "OpenSans-ExtraBold";
+    letter-spacing: 2px;
+  }
+  .subTitle{
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  input,textarea{
+    background: transparent;
+  }
+  .title{
+    color: $light-base;
+  }
+  .contact-input-group{
+    border-color: $light-base;
+  }
+  .confirm-btn{
+    background-color: $light-base;
+    color: $blue-base;
+    font-size: 18px;
+    display: inline-block;
+    line-height: 50px;
+    width: 100%;
+    border-radius: $border-radius-base;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 100px;
+    border:none;
+  }
+
+  .cancel-btn{
+    margin-bottom: 50px;
+  }
+
+  .submit-msg-line{
+    color: $light-base !important;
+    .title{
+      color: $light-base !important;
+    }
+  }
+}
+

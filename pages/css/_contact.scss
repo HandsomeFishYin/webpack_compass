@@ -1,0 +1,175 @@
+.popMask{
+  position: fixed;
+  width: 100%;
+  height:100%;
+  background-color: rgba(0,0,0,0.3);
+  top:0;
+  z-index:$z-index-base ;
+  text-align: right;
+  overflow: auto;
+}
+
+.contact-page{
+  display: inline-block;
+  width: 600px;
+  padding:120px 100px 0 65px;
+  background-color: $light-base;
+  text-align: left;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  position: relative;
+  right:0;
+  transition: all .5s;
+  min-height: 844px;
+  overflow: auto;
+  box-sizing: border-box;
+  top: 0;
+  float: right;
+
+  .contact-tag{
+    width: 45px;
+    background-color: $light-base;
+    color: $blue-base;
+    font-size: $fontsize-small;
+    text-align: center;
+    padding:10px;
+    box-shadow: -4px 0 6px rgba(0,0,0,0.3);
+    left:-45px;
+    top:50%;
+    margin-top: -80px;
+    box-sizing: border-box;
+    position: absolute;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    .icon-form_open{
+      font-size: $fontsize-middle;
+    }
+  }
+
+  .close-btn{
+    display: inline-block;
+    font-size: 100px;
+    position: absolute;
+    right: 120px;
+    top: 0;
+    color: rgba($blue-base,0.8);
+    cursor: pointer;
+    transition: all .3s;
+    width: 64px;
+    height: 128px;
+    line-height: 1;
+    transform-origin: center;
+    transform: rotate(45deg);
+    &:hover{
+      color: $blue-base ;
+    }
+  }
+
+  .contact-big-title{
+    color: $blue-base;
+    font-family: OpenSans-ExtraBold;
+    font-size:$fontsize-large ;
+    letter-spacing: 5px;
+  }
+  .contact-subtitle{
+    color: $blue-base;
+    font-size:18px ;
+    margin-bottom: 30px;
+  }
+  .confirm-btn{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: $blue-base;
+    color: $light-base;
+    border-radius: $border-radius-base;
+    line-height: 48px;
+    font-size: 18px;
+    transition: all .3s;
+    &:hover{
+      background-color: rgba($blue-base ,0.9);
+    }
+  }
+}
+
+.contact-input-group{
+  border-bottom: 2px solid $gray-light;
+  margin-bottom: 20px;
+  &.second{
+    margin-left: 30px;
+  }
+  &.error{
+    border-color: $red-base;
+  }
+  .title{
+    font-size: $fontsize-small;
+    color: $contact-input-title;
+  }
+  .error-msg{
+    color: #e00;
+    font-size: 0.8em;
+    text-align: center;
+    overflow: hidden;
+    margin: 20px 0 0;
+  }
+  input{
+    outline: none;
+    line-height: 30px;
+    border:none;
+    width: 100%;
+  }
+  textarea{
+    outline: none;
+    border:none;
+    height: 90px;
+    width: 100%;
+  }
+}
+
+.submit-msg-group{
+  .submit-msg-line{
+    margin-bottom: 25px;
+    color: #333333;
+    .title{
+      color: #999999;
+      margin-right: 15px;
+    }
+  }
+  .cancel-btn{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color: $gray-light;
+    color: $light-base;
+    border-radius: $border-radius-base;
+    line-height: 48px;
+    font-size: 18px;
+    transition: all .3s;
+    margin-top: 10px;
+      &:hover{
+        background-color: rgba($gray-light ,0.9);
+      }
+    }
+  }
+
+
+.submit-result-success{
+  margin-top: 20%;
+  font-size: $fontsize-middle;
+  color: $blue-base;
+  text-align: center;
+  img{
+    margin-bottom: 5%;
+  }
+}
+
+.submit-result-fail{
+  @extend .submit-result-success;
+  color:#bec6d3 ;
+  .subtitle{
+    font-size: $fontsize-small;
+    text-decoration: underline;
+    margin-top: 15px;
+    color:#bec6d3 ;
+  }
+}
