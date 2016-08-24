@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   outline: none;
+  font-family: "Microsoft YaHei";
 }
 
 ol, ul {
@@ -123,5 +124,17 @@ $gray-base: #000000;
     &:hover {
       background-color: rgba($blue-base, 0.8);
     }
+  }
+}
+
+
+
+.edit-medical-module-name{
+  padding:20px 10px;
+  input{
+    border:1px solid #ddd;
+    height:25px;
+    line-height: 25px;
+    border-radius: 3px;
   }
 }
